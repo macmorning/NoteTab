@@ -1,0 +1,17 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://g.etfv.co/http://www.sublimetext.com"/>
+<title>Note Tab</title>
+<script>
+function i()
+{
+  document.getElementById('text').value=localStorage.mynotes;
+	document.getElementById('text').onkeypress=function(){
+		localStorage.mynotes=document.getElementById('text').value;
+	};
+}
+</script>
+<body spellcheck="false" style="background-color: black;" onload="i();">
+	<textarea style="padding:2px; color:#00FF00; background-color: black; width: 100%; height: 100%; border: none; outline: none" id='text' autofocus />
+</body>
+</html>
